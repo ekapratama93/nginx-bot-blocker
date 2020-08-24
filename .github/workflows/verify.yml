@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Nginx
-      run: sudo apt install -y Nginx
+      run: sudo apt install -y nginx
     - name: Test configfile
       run: sudo nginx -t -c main.conf
