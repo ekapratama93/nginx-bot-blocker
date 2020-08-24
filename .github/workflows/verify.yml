@@ -1,4 +1,4 @@
-name: Workflow for Nginx Test
+name: Nginx Config Test
 on: [push]
 jobs:
   run:
