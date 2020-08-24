@@ -1,0 +1,17 @@
+name: Workflow for Nginx Test
+on: [push]
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    env:
+      OS: ${{ matrix.os }}
+      PYTHON: ${{ matrix.python-version }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Nginx
+      run: sudo apt install -y Nginx
+    - name: Test configfile
+      run: sudo nginx -t -c main.conf
