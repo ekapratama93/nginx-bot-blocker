@@ -14,4 +14,4 @@ jobs:
     - name: Install Nginx
       run: sudo apt install -y nginx
     - name: Test configfile
-      run: sudo nginx -t -c main.conf
+      run: sudo nginx -t -c .github/workflows/main.conf
