@@ -12,6 +12,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Nginx
-      run: pwd && sudo apt install -y nginx
+      run: sudo apt install -y nginx
     - name: Test configfile
-      run: sudo nginx -t -c .github/workflows/main.conf
+      run: sudo nginx -t -c /home/runner/work/nginx-bot-blocker/nginx-bot-blocker/.github/workflows/main.conf
