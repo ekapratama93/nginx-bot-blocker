@@ -1,7 +1,7 @@
 name: Update rule from nginx-ultimate-bad-bot-blocker
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 23 * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
