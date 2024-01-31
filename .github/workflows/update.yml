@@ -14,7 +14,7 @@ jobs:
       - run: pip install requests
       - run: MAIN_DIR="/home/runner/work/nginx-bot-blocker/nginx-bot-blocker/" python .scripts/process.py
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           delete-branch: true
           branch-suffix: timestamp
