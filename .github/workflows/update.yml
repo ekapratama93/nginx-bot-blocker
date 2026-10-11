@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.8"
+          python-version: "3.15"
           architecture: x64
       - run: pip install requests
       - run: MAIN_DIR="/home/runner/work/nginx-bot-blocker/nginx-bot-blocker/" python .scripts/process.py
